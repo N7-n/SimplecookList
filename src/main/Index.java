@@ -22,9 +22,6 @@ public class Index extends HttpServlet {
         // TODO Auto-generated constructor stub
     }
 
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // TODO Auto-generated method stub
         RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/view.jsp");
