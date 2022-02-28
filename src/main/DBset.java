@@ -13,9 +13,9 @@ public class DBset {
         Class.forName("com.mysql.jdbc.Driver");
         // 2. DBと接続する
         con = DriverManager.getConnection(
-            "jdbc:mysql://localhost/world?useSSL=false",
+            "jdbc:mysql://localhost/longrun?useSSL=false",
             "root",
-            "password"
+            "n72142qq"
         );
         // "password"の部分は，ご自身でrootユーザーに設定したものを記載してください。
 
