@@ -29,4 +29,14 @@
     <servlet-name>NewServlet</servlet-name>
     <url-pattern>/new</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Create</display-name>
+    <servlet-name>Create</servlet-name>
+    <servlet-class>Create</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Create</servlet-name>
+    <url-pattern>/Create</url-pattern>
+  </servlet-mapping>
 </web-app>

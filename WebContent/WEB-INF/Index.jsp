@@ -15,7 +15,7 @@
                       <c:out value="${data.item}"/>
                       <c:out value="${data.time}"/>
                 </li>
-            </c:forEach>
-
+        </c:forEach>
+		<a href="<c:url value='/new' />">新規メッセージの投稿</a>
     </body>
 </html>
