@@ -31,6 +31,9 @@ public class Index extends HttpServlet {
     	request.setAttribute("time", time);
         RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/result.jsp");
         rd.forward(request, response);
+//        request.setAttribute("time", time);
+
+ //       getServletConfig().getServletContext().getRequestDispatcher("/WEB-INF/result.jsp").forward(request, response);
     }
 
 }

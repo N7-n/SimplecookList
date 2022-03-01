@@ -10,10 +10,10 @@ public class DBset {
 
     public static Connection getConnection() throws SQLException, ClassNotFoundException {
         // 1. ドライバのクラスをJava上で読み込む
-        Class.forName("com.mysql.jdbc.Driver");
+        Class.forName("com.mysql.cj.jdbc.Driver");
         // 2. DBと接続する
         con = DriverManager.getConnection(
-            "jdbc:mysql://localhost/longrun?useSSL=false",
+            "jdbc:mysql://localhost/longrun?serverTimezone=UTC",
             "root",
             "n72142qq"
         );
