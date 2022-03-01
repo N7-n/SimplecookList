@@ -32,11 +32,13 @@ public class Create extends HttpServlet {
 		DTO dto =new DTO();
 		String title =request.getParameter("title");
 		String text =request.getParameter("text");
+		String item =request.getParameter("item");
+		int time =Integer.parseInt(request.getParameter("time"));
 		dto.setTitle(title);
 		dto.setText(text);
-		dto.setTime(20);
-		dto.setItem("item");
-		data.addData(title,text,"アイテム",20);
+		dto.setTime(time);
+		dto.setItem(item);
+		data.addData(title,text,item,time);
         response.sendRedirect(request.getContextPath() + "/Index");
         }
 

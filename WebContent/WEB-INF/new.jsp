@@ -14,8 +14,16 @@
 			<input type="text" name="title" value="${dto.title}" />
 			</label>
 			<br /><br />
-			<label>メッセージ<br />
+			<label>作り方<br />
 			<input type="text"  name="text" value="${dto.text}"/>
+			</label>
+			<br /><br />
+			<label>材料<br />
+			<input type="text"  name="text" value="${dto.item}"/>
+			</label>
+			<br /><br />
+			<label>時間<br />
+			<input type="tel"  name="time" value="${dto.time}"/>
 			</label>
 			<br /><br />
 			<input type="hidden" name="_token" value="${_token}" />

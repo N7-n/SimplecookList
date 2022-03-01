@@ -8,13 +8,10 @@
     </head>
     <body>
     	<c:forEach var="data" items="${data}">
-                <li>
-                      <c:out value="${data.id}" />
-                      <c:out value="${data.title}"/>
-                      <c:out value="${data.text}"/>
+                      <h2><c:out value="${data.id}" /><c:out value="${data.title}"/></h2>
+                      <p><c:out value="${data.text}"/></p>
                       <c:out value="${data.item}"/>
-                      <c:out value="${data.time}"/>
-                </li>
+                      <p><c:out value="${data.time}"/>分</p>
         </c:forEach>
 		<a href="<c:url value='/new' />">新規メッセージの投稿</a>
     </body>
