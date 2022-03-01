@@ -29,7 +29,11 @@ public class Index extends HttpServlet {
         // TODO Auto-generated method stub
     	GetDataList dao = new GetDataList();
     	List<DTO> data = dao.getList();
-
+    	  if(request.getSession().getAttribute("flush") != null) {
+              // セッションスコープ内のフラッシュメッセージをリクエストスコープに保存し、セッションスコープからは削除する
+              request.setAttribute("flush", request.getSession().getAttribute("flush"));
+              request.getSession().removeAttribute("flush");
+          }
     	request.setAttribute("data", data);
         RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/Index.jsp");
         rd.forward(request, response);

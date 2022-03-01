@@ -38,6 +38,7 @@ public class Create extends HttpServlet {
 		dto.setText(text);
 		dto.setTime(time);
 		dto.setItem(item);
+        request.getSession().setAttribute("flush", "更新が完了しました。");
 		data.addData(title,text,item,time);
         response.sendRedirect(request.getContextPath() + "/Index");
         }

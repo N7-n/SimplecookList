@@ -7,6 +7,11 @@
         <title>Insert title here</title>
     </head>
     <body>
+            <c:if test="${flush != null}">
+            <div id="flush_success">
+                <c:out value="${flush}"></c:out>
+            </div>
+        </c:if>
     	<c:forEach var="data" items="${data}">
                       <h2><c:out value="${data.id}" /><c:out value="${data.title}"/></h2>
                       <p><c:out value="${data.text}"/></p>
