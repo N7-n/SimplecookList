@@ -6,6 +6,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 import main.DBset;
+
 public class GetData {
     private PreparedStatement pstmt;
     private ResultSet rs;

@@ -29,14 +29,8 @@ public class Index extends HttpServlet {
       	GetData dao = new GetData();
         int time = dao.getData();
     	request.setAttribute("time", time);
-
-    }
-
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
         RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/result.jsp");
         rd.forward(request, response);
-
-	}
+    }
 
 }
