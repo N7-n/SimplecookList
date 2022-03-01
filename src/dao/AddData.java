@@ -3,25 +3,26 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 
 import main.DBset;
-
-public class GetData {
-    private PreparedStatement pstmt;
+public class AddData {
+	private PreparedStatement pstmt;
     private ResultSet rs;
-    int a=0;
-    public int getData(){
+
+    public void addData(String title,String text ,String item,int time) {
+//    	String title = dto.getTitle();
+
     	try{
     		Connection con = DBset.getConnection();
-    		Statement stmt = con.createStatement();
-  //  		pstmt = con.prepareStatement("insert  into datalog values(1,as,add,dff,20)");
-    		rs = stmt.executeQuery("select * from dataLog");
-    		while(rs.next()){
-    			a=rs.getInt("time");
-    		}
-//    		int count = stmt.executeUpdate("update dataLog set time = 200 where id = 1");
+    		String sql = "insert into dataLog (title,text,item,time) values(?,?,?,?)";
+            pstmt = con.prepareStatement(sql);
 
+            pstmt.setString(1, title);
+            pstmt.setString(2, text);
+            pstmt.setString(3, item);
+            pstmt.setInt(4, time);
+
+            pstmt.executeUpdate();
     	}catch (ClassNotFoundException e) {
     		e.printStackTrace();
     	} catch (SQLException e) {
@@ -43,8 +44,7 @@ public class GetData {
     		}
     		DBset.close();
     	}
-    	return(a);
     }
 
-
 }
+

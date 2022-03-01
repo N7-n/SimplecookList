@@ -19,4 +19,14 @@
     <servlet-name>Index</servlet-name>
     <url-pattern>/Index</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>NewServlet</display-name>
+    <servlet-name>NewServlet</servlet-name>
+    <servlet-class>main.NewServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NewServlet</servlet-name>
+    <url-pattern>/new</url-pattern>
+  </servlet-mapping>
 </web-app>
