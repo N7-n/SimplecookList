@@ -36,7 +36,8 @@ public class Create extends HttpServlet {
 		dto.setText(text);
 		dto.setTime(20);
 		dto.setItem("item");
-		data.addData(title,text,"item",20);
+		data.addData(title,text,"アイテム",20);
+        response.sendRedirect(request.getContextPath() + "/Index");
         }
 
     }

@@ -39,4 +39,22 @@
     <servlet-name>Create</servlet-name>
     <url-pattern>/Create</url-pattern>
   </servlet-mapping>
+  <filter>
+    <display-name>EncodingFilter</display-name>
+    <filter-name>EncodingFilter</filter-name>
+    <filter-class>filters.EncodingFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>EncodingFilter</filter-name>
+    <url-pattern>/EncodingFilter</url-pattern>
+  </filter-mapping>
+  <filter>
+    <display-name>EncodingFilter1</display-name>
+    <filter-name>EncodingFilter1</filter-name>
+    <filter-class>filters.EncodingFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>EncodingFilter1</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
 </web-app>
