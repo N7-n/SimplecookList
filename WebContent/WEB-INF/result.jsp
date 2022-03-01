@@ -7,9 +7,7 @@
         <title>Insert title here</title>
     </head>
     <body>
-        <p>id</p>
-        <p><c:out value="${id}" /></p>
-        <p>title</p>
-        <p><c:out value="${title}" /></p>
+        <p>time</p>
+        <p><c:out value="${time}" /></p>
     </body>
 </html>

@@ -1,34 +1,25 @@
 package dao;
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
-
-import com.mysql.jdbc.PreparedStatement;
+import java.sql.Statement;
 
 import main.DBset;
-import main.DTO;
 public class GetData {
     private PreparedStatement pstmt;
     private ResultSet rs;
-    public List<DTO> getData(){
-    	List<DTO> results = new ArrayList<DTO>();
+    int a=0;
+    public int getData(){
     	try{
     		Connection con = DBset.getConnection();
-    		String sql = "select * from dataLog";
-    		pstmt = (PreparedStatement) con.prepareStatement(sql);
-    		rs = pstmt.executeQuery();
-
-    		while (rs.next()) {
-                // 1件ずつCountryオブジェクトを生成して結果を詰める
-                DTO dataset = new DTO();
-                dataset.setId(rs.getInt("id"));
-                dataset.setTitle(rs.getString("title"));
-
-                // リストに追加
-                results.add(dataset);
+    		Statement stmt = con.createStatement();
+  //  		pstmt = con.prepareStatement("insert  into datalog values(1,as,add,dff,20)");
+    		rs = stmt.executeQuery("select * from dataLog");
+    		while(rs.next()){
+    			a=rs.getInt("time");
     		}
+//    		int count = stmt.executeUpdate("update dataLog set time = 200 where id = 1");
 
     	}catch (ClassNotFoundException e) {
     		e.printStackTrace();
@@ -51,7 +42,7 @@ public class GetData {
     		}
     		DBset.close();
     	}
-    	return results;
+    	return(a);
     }
 
 
