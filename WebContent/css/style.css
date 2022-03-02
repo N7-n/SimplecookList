@@ -16,13 +16,9 @@ body {
     margin-top: 15px;
     padding-left: 3%;
 }
-
-h1 {
-    width: 94%;
-    padding-top: 17px;
-    padding-left: 3%;
-    font-size: 24px;
-    color: #eeeeee;
+h1{
+	font-size:40px;
+	text-align:center;
 }
 
 h2 {
@@ -38,6 +34,7 @@ li {
 p {
     margin-top: 15px;
     margin-bottom: 15px;
+    line-height: 1.7;
 }
 
 a {
@@ -72,8 +69,16 @@ button {
 .a{
 	white-space: pre-wrap;
 }
+.text_a{
+	white-space: pre-wrap;
+	text-align:justify;
+}
 .er{
 	color:red;
+}
+.frew{
+	display: flex;
+	justify-content: space-around;
 }
 #footer {
     text-align: center;
