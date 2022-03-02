@@ -5,21 +5,31 @@
     <head>
         <meta charset="UTF-8">
         <title>Insert title here</title>
+        <link rel="stylesheet" href="<c:url value='/css/reset.css' />">
+        <link rel="stylesheet" href="<c:url value='/css/style.css' />">
     </head>
     <body>
-           <h2>メッセージ新規作成ページ</h2>
+          <c:if test="${errors != null}">
+    <div id="flush_error">
+        入力内容にエラーがあります。<br />
+        <c:forEach var="error" items="${errors}">
+            ・<c:out value="${error}" /><br />
+        </c:forEach>
+
+    </div>
+</c:if>
+ <h2>メッセージ新規作成ページ</h2>
 
         <form method="POST" action="${pageContext.request.contextPath}/Create">
             <label>タイトル<br />
 			<input type="text" name="title" value="${dto.title}" />
 			</label>
 			<br /><br />
-			<label>作り方<br />
-			<input type="text"  name="text" value="${dto.text}"/>
-			</label>
+			<label>作り方<br />			</label>
+			<textarea rows="5" cols="25" name="text"></textarea>
 			<br /><br />
 			<label>材料<br />
-			<input type="text"  name="item" value="${dto.item}"/>
+			<textarea rows="5" cols="25" name="item"></textarea>
 			</label>
 			<br /><br />
 			<label>時間<br />

@@ -5,6 +5,8 @@
     <head>
         <meta charset="UTF-8">
         <title>Insert title here</title>
+        <link rel="stylesheet" href="<c:url value='/css/reset.css' />">
+        <link rel="stylesheet" href="<c:url value='/css/style.css' />">
     </head>
     <body>
         <c:if test="${flush != null}">
@@ -17,8 +19,8 @@
                         <c:out value="${data.id}" />
                     </a>
                       <c:out value="${data.title}"/>
-                      <p><c:out value="${data.text}"/></p>
-                      <p><c:out value="${data.item}"/></p>
+                      <p class=a><c:out value="${data.text}"/></p>
+                      <p class=a><c:out value="${data.item}"/></p>
                       <p><c:out value="${data.time}"/>分</p>
         </c:forEach>
 		<a href="<c:url value='/new' />">新規メッセージの投稿</a>

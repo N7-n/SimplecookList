@@ -5,6 +5,8 @@
     <head>
         <meta charset="UTF-8">
         <title>Insert title here</title>
+        <link rel="stylesheet" href="<c:url value='/css/reset.css' />">
+        <link rel="stylesheet" href="<c:url value='/css/style.css' />">
     </head>
     <body>
     <c:forEach var="data" items="${data}">

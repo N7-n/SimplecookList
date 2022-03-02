@@ -1,5 +1,7 @@
 import java.io.IOException;
+import java.util.List;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -7,6 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import dao.AddData;
 import main.DTO;
+import main.MessageValidator;
 
 
 /**
@@ -34,13 +37,23 @@ public class Create extends HttpServlet {
 		String text =request.getParameter("text");
 		String item =request.getParameter("item");
 		int time =Integer.parseInt(request.getParameter("time"));
-		data.addData(title,text,item,time);
 		dto.setTitle(title);
 		dto.setText(text);
 		dto.setItem(item);
 		dto.setTime(time);
+		List<String> errors = MessageValidator.validate(dto);
+        // フォームに初期値を設定、さらにエラーメッセージを送る
+        request.setAttribute("_token", request.getSession().getId());
+        request.setAttribute("dto", dto);
+        request.setAttribute("errors", errors);
+         if(errors.size() > 0) {
+             RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/new.jsp");
+             rd.forward(request, response);
+         } else {
+		data.addData(title,text,item,time);
         request.getSession().setAttribute("flush", "更新が完了しました。");
         response.sendRedirect(request.getContextPath() + "/Index");
+         }
         }
 
     }
