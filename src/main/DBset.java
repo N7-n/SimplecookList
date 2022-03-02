@@ -13,9 +13,9 @@ public class DBset {
         Class.forName("com.mysql.cj.jdbc.Driver");
         // 2. DBと接続する
         con = DriverManager.getConnection(
-            "jdbc:mysql://localhost/longrun?serverTimezone=UTC",
-            "root",
-            "n72142qq"
+            "jdbc:mysql://us-cdbr-east-05.cleardb.net/heroku_8006aeea56fc414?reconnect=true&useSSL=false&useUnicode=true&characterEncoding=utf8&characterSetResults=utf8",
+            "bd40076db02a2b",
+            "c90a5279"
         );
         // "password"の部分は，ご自身でrootユーザーに設定したものを記載してください。
 
