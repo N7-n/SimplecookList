@@ -1,26 +1,29 @@
 package dao;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
 import main.DBset;
 import main.DTO;
 
-public class GetDataList {
+public class Get1Data {
 	  private PreparedStatement pstmt;
-	    private ResultSet rs;
+	  private ResultSet rs;
 
-	    public List<DTO> getList() {
+	    public List<DTO> get1Data(int id) {
 	    	List<DTO> results = new ArrayList<DTO>();
 
 	    	try{
 	    		Connection con = DBset.getConnection();
-	    		Statement stmt = con.createStatement();
-	    		rs = stmt.executeQuery("select * from dataLog order by id desc limit 3");
+//	    		Statement stmt = con.createStatement();
+	            String sql ="select * from dataLog where id = ?";
+	            pstmt = con.prepareStatement(sql);
+	    		pstmt.setInt(1, id);
+	    		rs = pstmt.executeQuery();
 	    		while(rs.next()){
 	                DTO dto = new DTO();
 	                dto.setId(rs.getInt("id"));

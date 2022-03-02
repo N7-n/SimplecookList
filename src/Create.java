@@ -34,12 +34,12 @@ public class Create extends HttpServlet {
 		String text =request.getParameter("text");
 		String item =request.getParameter("item");
 		int time =Integer.parseInt(request.getParameter("time"));
+		data.addData(title,text,item,time);
 		dto.setTitle(title);
 		dto.setText(text);
-		dto.setTime(time);
 		dto.setItem(item);
+		dto.setTime(time);
         request.getSession().setAttribute("flush", "更新が完了しました。");
-		data.addData(title,text,item,time);
         response.sendRedirect(request.getContextPath() + "/Index");
         }
 

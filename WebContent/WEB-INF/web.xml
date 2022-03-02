@@ -57,4 +57,14 @@
     <filter-name>EncodingFilter1</filter-name>
     <url-pattern>/*</url-pattern>
   </filter-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Show</display-name>
+    <servlet-name>Show</servlet-name>
+    <servlet-class>main.Show</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Show</servlet-name>
+    <url-pattern>/show</url-pattern>
+  </servlet-mapping>
 </web-app>

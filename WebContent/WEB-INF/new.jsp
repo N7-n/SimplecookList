@@ -19,7 +19,7 @@
 			</label>
 			<br /><br />
 			<label>材料<br />
-			<input type="text"  name="text" value="${dto.item}"/>
+			<input type="text"  name="item" value="${dto.item}"/>
 			</label>
 			<br /><br />
 			<label>時間<br />
