@@ -72,7 +72,9 @@ button {
 .a{
 	white-space: pre-wrap;
 }
-
+.er{
+	color:red;
+}
 #footer {
     text-align: center;
 }

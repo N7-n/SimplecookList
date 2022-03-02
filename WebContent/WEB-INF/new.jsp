@@ -9,11 +9,11 @@
         <link rel="stylesheet" href="<c:url value='/css/style.css' />">
     </head>
     <body>
-          <c:if test="${errors != null}">
-    <div id="flush_error">
-        入力内容にエラーがあります。<br />
+        <c:if test="${errors != null}">
+    	<div id="flush_error" class =er>
+        入力内容にエラーがあります<br />
         <c:forEach var="error" items="${errors}">
-            ・<c:out value="${error}" /><br />
+        <c:out value="${error}" /><br />
         </c:forEach>
 
     </div>
