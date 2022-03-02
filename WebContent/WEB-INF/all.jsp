@@ -14,15 +14,28 @@
                 <c:out value="${flush}"></c:out>
             </div>
         </c:if>
+
+        <div class=maink>
+        <article>
     	<c:forEach var="data" items="${data}">
-                    <a href="${pageContext.request.contextPath}/show?id=${data.id}">
-                        <c:out value="${data.id}" />
+                    <a class=botton href="${pageContext.request.contextPath}/show?id=${data.id}">
+                        <c:out value="${data.title}"/>
                     </a>
-                      <c:out value="${data.title}"/>
-                      <p class=a><c:out value="${data.text}"/></p>
-                      <p class=a><c:out value="${data.item}"/></p>
-                      <p><c:out value="${data.time}"/>分</p>
+                      <p class=text_a><c:out value="${data.text}"/></p>
+                      <p class=last></p>
         </c:forEach>
-                <p><a href="${pageContext.request.contextPath}/Index">一覧に戻る</a></p>
+        </article>
+        <aside>
+        <div class=maink>
+        <p class="topnew">あなたも投稿してみませんか？<br><a href="<c:url value='/new' />">新規投稿を行う</a></p></div>
+    	</aside>
+</div>
+
+                <div class=frew>
+        <a href="${pageContext.request.contextPath}/Index">TOPに戻る</a>
+		<a  href="<c:url value='/new' />">新規メッセージの投稿</a>
+		<a href="<c:url value='/all' />">全ての投稿</a>
+		<a  href="https://docs.google.com/forms/d/e/1FAIpQLSe-zuOdA-CNOtoq1jHF1gJgHANwLV6xiq7ud2GxdpwgoiCGcA/viewform?usp=sf_link">ご意見・お問い合わせ</a>
+   </div>
     </body>
 </html>

@@ -10,23 +10,28 @@
     </head>
     <body>
     	<h1>Simple cook List</h1>
+    	<div class="cont">
         <c:if test="${flush != null}">
             <div id="flush_success">
                 <c:out value="${flush}"></c:out>
             </div>
         </c:if>
+        </div>
+        <div class=maink>
+        <article>
     	<c:forEach var="data" items="${data}">
-                    <a href="${pageContext.request.contextPath}/show?id=${data.id}">
-                        <c:out value="${data.id}" />
+                    <a class=botton href="${pageContext.request.contextPath}/show?id=${data.id}">
+                        <c:out value="${data.title}"/>
                     </a>
-                      <c:out value="${data.title}"/>
                       <p class=text_a><c:out value="${data.text}"/></p>
-                      <h4>☆材料☆</h4>
-                      <p class=a><c:out value="${data.item}"/></p>
-                      <h4>☆所要時間☆</h4>
-                      <p><c:out value="${data.time}"/>分</p>
-                      <p>______________________________</p>
+                      <p class=last></p>
         </c:forEach>
+        </article>
+        <aside>
+        <div class=maink>
+        <p class="topnew">あなたも投稿してみませんか？<br><a href="<c:url value='/new' />">新規投稿を行う</a></p></div>
+    	</aside>
+</div>
         <div class=frew>
 		<a  href="<c:url value='/new' />">新規メッセージの投稿</a>
 		<a href="<c:url value='/all' />">全ての投稿</a>

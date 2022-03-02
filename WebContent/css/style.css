@@ -10,7 +10,26 @@ body {
     height: 70px;
     background-color: #333333;
 }
-
+aside{
+ width:30%;
+}
+article{
+	width:74%;
+}
+.maink{
+		margin-top:30px;
+	display:flex;
+	justify-content:space-between;
+	margin-bottom:50px;
+}
+.topnew{
+	background:#fffac2;
+	padding:22px;
+	width:240px;
+	height:70px;
+	text-align:center;
+	margin-right:30px;
+}
 #content {
     width: 94%;
     margin-top: 15px;
@@ -19,8 +38,13 @@ body {
 h1{
 	font-size:40px;
 	text-align:center;
+	border-bottom: 3px solid #8490c8;
 }
-
+.botton{
+	font-size:25px;
+	border-bottom: 2px solid #24738e;;
+	margin-left:30px;
+}
 h2 {
     font-size: 36px;
     margin-bottom: 15px;
@@ -35,11 +59,6 @@ p {
     margin-top: 15px;
     margin-bottom: 15px;
     line-height: 1.7;
-}
-
-a {
-    text-decoration: none;
-    color: #24738e;
 }
 
 table, tr, th, td {
@@ -66,20 +85,41 @@ button {
     padding: 5px 10px;
 }
 
-.a{
-	white-space: pre-wrap;
-}
 .text_a{
 	white-space: pre-wrap;
 	text-align:justify;
+	margin-bottom:50px;
+	margin-left:30px;
+}
+.last{
+	border-bottom: 2px solid #b4c1d1;
+		margin-bottom:40px;
 }
 .er{
 	color:red;
 }
+a {
+    text-decoration: none;
+    color: #24738e;
+}
 .frew{
+	padding:40px;
+	font-size:16px;
+	background:#dbedf0;
 	display: flex;
 	justify-content: space-around;
 }
+form{
+	margin-left:40px;
+}
+.metro{
+	display:flex;
+	justify-content:space-around;
+}
 #footer {
     text-align: center;
+}
+.at{
+	font-size: 26px;
+	border-bottom: 3px solid #8490c8;
 }
