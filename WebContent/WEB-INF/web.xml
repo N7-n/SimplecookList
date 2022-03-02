@@ -67,4 +67,14 @@
     <servlet-name>Show</servlet-name>
     <url-pattern>/show</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>All</display-name>
+    <servlet-name>All</servlet-name>
+    <servlet-class>main.All</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>All</servlet-name>
+    <url-pattern>/all</url-pattern>
+  </servlet-mapping>
 </web-app>

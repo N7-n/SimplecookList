@@ -23,7 +23,6 @@
                       <p class=a><c:out value="${data.item}"/></p>
                       <p><c:out value="${data.time}"/>分</p>
         </c:forEach>
-		<a href="<c:url value='/new' />">新規メッセージの投稿</a>
-		<a href="<c:url value='/all' />">全ての投稿</a>
+                <p><a href="${pageContext.request.contextPath}/Index">一覧に戻る</a></p>
     </body>
 </html>
