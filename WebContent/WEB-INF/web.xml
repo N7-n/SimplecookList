@@ -77,4 +77,14 @@
     <servlet-name>All</servlet-name>
     <url-pattern>/all</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Get</display-name>
+    <servlet-name>Get</servlet-name>
+    <servlet-class>main.Get</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Get</servlet-name>
+    <url-pattern>/Get</url-pattern>
+  </servlet-mapping>
 </web-app>

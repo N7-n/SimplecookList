@@ -32,7 +32,7 @@
 
 	<div class=frew>
         <a href="${pageContext.request.contextPath}/Index">TOPに戻る</a>
-		<a  href="<c:url value='/new' />">新規メッセージの投稿</a>
+		<a  href="<c:url value='/new' />">新規投稿</a>
 		<a href="<c:url value='/all' />">全ての投稿</a>
 		<a  href="https://docs.google.com/forms/d/e/1FAIpQLSe-zuOdA-CNOtoq1jHF1gJgHANwLV6xiq7ud2GxdpwgoiCGcA/viewform?usp=sf_link">ご意見・お問い合わせ</a>
    </div>

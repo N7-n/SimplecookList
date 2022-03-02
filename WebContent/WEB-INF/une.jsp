@@ -4,20 +4,12 @@
 <html lang="ja">
     <head>
         <meta charset="UTF-8">
-        <title>Simple cook List</title>
+        <title>Insert title here</title>
         <link rel="stylesheet" href="<c:url value='/css/reset.css' />">
         <link rel="stylesheet" href="<c:url value='/css/style.css' />">
     </head>
     <body>
-    	<h1>Simple cook List</h1>
-    	<div class="cont">
-        <c:if test="${flush != null}">
-            <div id="flush_success">
-                <c:out value="${flush}"></c:out>
-            </div>
-        </c:if>
-        </div>
-        <div class=maink>
+       <div class=maink>
         <article>
     	<c:forEach var="data" items="${data}">
                     <a class=botton href="${pageContext.request.contextPath}/show?id=${data.id}">
@@ -30,7 +22,6 @@
         <aside>
         <div class=maink>
         <p class="topnew">あなたも投稿してみませんか？<br><a href="<c:url value='/new' />">新規投稿を行う</a></p></div>
-    	<p class="topnew"><a href="<c:url value='/Get' />">おすすめのレシピ</a></p>
     	</aside>
 		</div>
         <div class=frew>

@@ -31,7 +31,7 @@
 			</label>
 			<br /><br />
 			<label>時間<br />
-			<input type="tel"  name="time" value="${dto.time}"/>
+			<input type="tel"  name="time" value="${dto.time}"/>分
 			</label>
 			<br /><br />
 			<input type="hidden" name="_token" value="${_token}" />
