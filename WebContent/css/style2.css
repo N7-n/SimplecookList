@@ -16,9 +16,14 @@ textarea{
 }
 aside{
  width:30%;
+ padding:12px 10px;
 }
 article{
 	width:70%;
+}
+li {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 h1{
 	font-size:40px;
@@ -64,10 +69,37 @@ frew{
 .maink1{
 	display:none;
 }
+.sub{
+	padding:0 8px 8px;
+	border-bottom: 2px solid #b4c1d1;
+
+}
+h3{
+	font-size: 24px;
+    text-align:center;
+
+}
+.maink{
+	margin-top:30px;
+	display:flex;
+	justify-content:space-between;
+	margin-bottom:50px;
+}
+@media screen and (max-width:600px) {
+.frew{
+	padding:40px;
+	font-size:11px;
+	background:#dbedf0;
+	display: flex;
+	justify-content: space-around;
+}
 aside{
  width:0%;
 }
 article{
 	width:100%;
+}
+.sub{
+	 display:none;
 }
 }

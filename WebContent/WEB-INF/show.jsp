@@ -10,13 +10,25 @@
         <link rel="stylesheet" href="<c:url value='/css/style.css' />">
     </head>
     <body>
-    <h1><a href="${pageContext.request.contextPath}/Index">Simple cook List</a></h1>
+    <h1 class=st><a href="${pageContext.request.contextPath}/Index">Simple cook List</a></h1>
 <div class=maink>
         <article>
+         <div class="hamburger-menu">
+        <input type="checkbox" id="menu-btn-check">
+        <label for="menu-btn-check" class="menu-btn"><span></span></label>
+               <div class="menu-content">
+         <ul class=lw>
+         <li><a href="${pageContext.request.contextPath}/Index">TOPに戻る</a>
+        <li><a href="<c:url value='/new' />">新規投稿</a>
+        <li><a href="<c:url value='/all' />">全ての投稿</a>
+    	<li><a href="<c:url value='/Get' />">おすすめのレシピ</a>
+    	<li><a  href="https://docs.google.com/forms/d/e/1FAIpQLSe-zuOdA-CNOtoq1jHF1gJgHANwLV6xiq7ud2GxdpwgoiCGcA/viewform?usp=sf_link">ご意見・お問い合わせ</a>
+    	</ul>
+        </div></div>
     		<c:forEach var="data" items="${data}">
                     <a class=botton href="${pageContext.request.contextPath}/show?id=${data.id}">
                         <c:out value="${data.title}"/>
-                    </a>
+                    </a>  <p class=last></p>
 
                       <p class=text_a><c:out value="${data.text}"/></p>
 
@@ -27,13 +39,16 @@
 					  </div>
 					  <p class=botton><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="SimplecookListを一緒に使おう" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         				<p class=last></p>
-        	</p>
         	</c:forEach>
         </article>
 <aside>
-<div class=maink1>
-        	<p class="topnew">あなたも投稿してみませんか？<br><a href="<c:url value='/new' />">新規投稿を行う</a></p>
-    	<p class="topnew"><a href="<c:url value='/Get' />">おすすめのレシピ</a></p></div>
+		<h3 class=sub>カテゴリー</h3>
+        <ul class=sub>
+        <li><a href="<c:url value='/new' />">新規投稿</a>
+        <li><a href="<c:url value='/all' />">全ての投稿</a>
+    	<li><a href="<c:url value='/Get' />">おすすめのレシピ</a>
+    	<li><a  href="https://docs.google.com/forms/d/e/1FAIpQLSe-zuOdA-CNOtoq1jHF1gJgHANwLV6xiq7ud2GxdpwgoiCGcA/viewform?usp=sf_link">ご意見・お問い合わせ</a>
+    	</ul>
     	</aside>
 </div>
 

@@ -16,9 +16,10 @@
         <c:forEach var="error" items="${errors}">
         <c:out value="${error}" /><br />
         </c:forEach>
-
-    </div>
-</c:if>
+    	</div>
+		</c:if>
+		<div class=maink>
+   		<article>
         <form method="POST" action="${pageContext.request.contextPath}/Create">
             <br><label class=mar>タイトル<br />
 			<input type="text" class=mar name="title" value="${dto.title}" />
@@ -38,7 +39,17 @@
 			<input type="hidden" name="_token" value="${_token}" />
 			<button type="submit">投稿</button>
         </form>
-
+        </article>
+        <aside>
+        <h3 class=sub>カテゴリー</h3>
+        <ul class=sub>
+        <li><a href="${pageContext.request.contextPath}/Index">TOPに戻る</a>
+        <li><a href="<c:url value='/all' />">全ての投稿</a>
+    	<li><a href="<c:url value='/Get' />">おすすめのレシピ</a>
+    	<li><a  href="https://docs.google.com/forms/d/e/1FAIpQLSe-zuOdA-CNOtoq1jHF1gJgHANwLV6xiq7ud2GxdpwgoiCGcA/viewform?usp=sf_link">ご意見・お問い合わせ</a>
+    	</ul>
+    	</aside>
+    	</div>
         <div class=frew>
         <a href="${pageContext.request.contextPath}/Index">TOPに戻る</a>
 		<a href="<c:url value='/all' />">全ての投稿</a>
