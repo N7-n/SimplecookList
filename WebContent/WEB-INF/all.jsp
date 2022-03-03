@@ -28,15 +28,15 @@
         </c:forEach>
         </article>
         <aside>
-        <div class=maink>
-        <p class="topnew">あなたも投稿してみませんか？<br><a href="<c:url value='/new' />">新規投稿を行う</a></p></div>
+        <div class=maink1>
+        <p class="topnew">あなたも投稿してみませんか？<br><a href="<c:url value='/new' />">新規投稿を行う</a></p>
+    	    	<p class="topnew"><a href="<c:url value='/Get' />">おすすめのレシピ</a></p></div>
     	</aside>
 </div>
 
                 <div class=frew>
         <a href="${pageContext.request.contextPath}/Index">TOPに戻る</a>
 		<a  href="<c:url value='/new' />">新規投稿</a>
-		<a href="<c:url value='/all' />">全ての投稿</a>
 		<a  href="https://docs.google.com/forms/d/e/1FAIpQLSe-zuOdA-CNOtoq1jHF1gJgHANwLV6xiq7ud2GxdpwgoiCGcA/viewform?usp=sf_link">ご意見・お問い合わせ</a>
    </div>
     </body>

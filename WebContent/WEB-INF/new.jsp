@@ -20,19 +20,19 @@
     </div>
 </c:if>
         <form method="POST" action="${pageContext.request.contextPath}/Create">
-            <label class=lab>・タイトル<br />
-			<input type="text" name="title" value="${dto.title}" />
+            <br><label class=mar>タイトル<br />
+			<input type="text" class=mar name="title" value="${dto.title}" />
 			</label>
 			<br /><br />
-			<label class=lab>・作り方<br />			</label>
-			<textarea  name="text"></textarea>
+			<label class=mar>作り方<br />			</label>
+			<textarea  class=mar rows = 7 name="text"></textarea>
 			<br /><br />
-			<label class=lab>・材料<br />
-			<textarea name="item"></textarea>
+			<label class=mar>材料<br />
+			<textarea rows= 3 class=mar name="item"></textarea>
 			</label>
 			<br /><br />
-			<label class=lab>・時間<br />
-			<input type="tel"  name="time" value="${dto.time}"/>分
+			<label class=mar>時間<br />
+			<input type="tel" class=mar name="time" value="${dto.time}"/>分
 			</label>
 			<br /><br />
 			<input type="hidden" name="_token" value="${_token}" />

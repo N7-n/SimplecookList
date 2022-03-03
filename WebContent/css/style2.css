@@ -10,14 +10,15 @@ body {
     height: 70px;
     background-color: #333333;
 }
+textarea{
+	resize: none;
+	width:300px;
+}
 aside{
  width:30%;
 }
 article{
-	width:74%;
-}
-form{
-	margin-left:40px;
+	width:70%;
 }
 h1{
 	font-size:40px;
@@ -40,4 +41,33 @@ label{
 	display: flex;
 	justify-content: space-around;
 }
-
+.er{
+	color:red;
+}
+.mar{
+	margin-left:40px;
+}
+button{
+	display:block;
+  width:150px;
+  margin:0 auto;
+  margin-top:40px;
+  margin-bottom:40px;
+}
+frew{
+	padding:40px;
+	font-size:10px;
+	background:#dbedf0;
+	display: flex;
+	justify-content: space-around;
+}
+.maink1{
+	display:none;
+}
+aside{
+ width:0%;
+}
+article{
+	width:100%;
+}
+}

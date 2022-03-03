@@ -17,17 +17,24 @@
                     <a class=botton href="${pageContext.request.contextPath}/show?id=${data.id}">
                         <c:out value="${data.title}"/>
                     </a>
+
                       <p class=text_a><c:out value="${data.text}"/></p>
+
                       <div class=metro><p class=at>材料 </p><p class=at>時間</p></div>
                       <div class=metro>
                       <p class=text_a><c:out value="${data.item}" /></p>
         			  <p class=text_a><c:out value="${data.time}" />分</p>
 					  </div>
+					  <p class=botton><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="SimplecookListを一緒に使おう" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        				<p class=last></p>
+        	</p>
         	</c:forEach>
         </article>
 <aside>
+<div class=maink1>
         	<p class="topnew">あなたも投稿してみませんか？<br><a href="<c:url value='/new' />">新規投稿を行う</a></p>
-</aside>
+    	<p class="topnew"><a href="<c:url value='/Get' />">おすすめのレシピ</a></p></div>
+    	</aside>
 </div>
 
 

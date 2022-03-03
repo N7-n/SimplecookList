@@ -29,9 +29,9 @@
         </c:forEach>
         </article>
         <aside>
-        <div class=maink>
-        <p class="topnew">あなたも投稿してみませんか？<br><a href="<c:url value='/new' />">新規投稿を行う</a></p></div>
-    	<p class="topnew"><a href="<c:url value='/Get' />">おすすめのレシピ</a></p>
+        <div class=maink1>
+        <p class="topnew">あなたも投稿してみませんか？<br><a href="<c:url value='/new' />">新規投稿を行う</a></p>
+    	<p class="topnew"><a href="<c:url value='/Get' />">おすすめのレシピ</a></p></div>
     	</aside>
 		</div>
         <div class=frew>

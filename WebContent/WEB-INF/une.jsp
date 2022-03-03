@@ -22,7 +22,7 @@
         </c:forEach>
         </article>
         <aside>
-        <div class=maink>
+        <div class=maink1>
         <p class="topnew">あなたも投稿してみませんか？<br><a href="<c:url value='/new' />">新規投稿を行う</a></p></div>
     	</aside>
 		</div>

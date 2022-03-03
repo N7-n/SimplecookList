@@ -14,7 +14,7 @@ aside{
  width:30%;
 }
 article{
-	width:74%;
+	width:70%;
 }
 
 label{
@@ -27,6 +27,13 @@ textera{
 	height:100px;
 	max-height:100px;
 }
+.maink1{
+	margin-top:30px;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	margin-bottom:50px;
+}
 .maink{
 	margin-top:30px;
 	display:flex;
@@ -36,8 +43,6 @@ textera{
 .topnew{
 	background:#fffac2;
 	padding:22px;
-	width:240px;
-	height:70px;
 	text-align:center;
 	margin-right:30px;
 }
@@ -53,8 +58,11 @@ h1{
 }
 .botton{
 	font-size:25px;
-	border-bottom: 2px solid #24738e;;
 	margin-left:30px;
+}
+.bo{
+	margin-left:30px;
+	font-size:25px;
 }
 h2 {
     font-size: 36px;
@@ -101,6 +109,7 @@ button {
 	text-align:justify;
 	margin-bottom:50px;
 	margin-left:30px;
+	margin-right:30px;
 }
 .last{
 	border-bottom: 2px solid #b4c1d1;
@@ -133,4 +142,22 @@ form{
 .at{
 	font-size: 26px;
 	border-bottom: 3px solid #8490c8;
+}
+@media screen and (max-width:600px) {
+.frew{
+	padding:40px;
+	font-size:10px;
+	background:#dbedf0;
+	display: flex;
+	justify-content: space-around;
+}
+.maink1{
+	display:none;
+}
+aside{
+ width:0%;
+}
+article{
+	width:100%;
+}
 }
