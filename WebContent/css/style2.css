@@ -1,0 +1,43 @@
+@CHARSET "UTF-8";
+
+body {
+    color: #333333;
+    font-family: "Hiragino Kaku Gothic Pro",Meiryo,"MS PGothic",Helvetica,Arial,sans-serif;
+}
+
+#header {
+    width: 100%;
+    height: 70px;
+    background-color: #333333;
+}
+aside{
+ width:30%;
+}
+article{
+	width:74%;
+}
+form{
+	margin-left:40px;
+}
+h1{
+	font-size:40px;
+	text-align:center;
+	border-bottom: 3px solid #8490c8;
+}
+a {
+    text-decoration: none;
+    color: #24738e;
+}
+label{
+	padding:10px;
+	font-size:25px;
+}
+
+.frew{
+	padding:40px;
+	font-size:16px;
+	background:#dbedf0;
+	display: flex;
+	justify-content: space-around;
+}
+

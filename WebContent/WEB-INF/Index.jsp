@@ -4,12 +4,13 @@
 <html lang="ja">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>Simple cook List</title>
         <link rel="stylesheet" href="<c:url value='/css/reset.css' />">
         <link rel="stylesheet" href="<c:url value='/css/style.css' />">
     </head>
     <body>
-    	<h1>Simple cook List</h1>
+    	<h1><a href="${pageContext.request.contextPath}/Index">Simple cook List</a></h1>
     	<div class="cont">
         <c:if test="${flush != null}">
             <div id="flush_success">

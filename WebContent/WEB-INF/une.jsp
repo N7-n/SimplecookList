@@ -4,11 +4,13 @@
 <html lang="ja">
     <head>
         <meta charset="UTF-8">
-        <title>Insert title here</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Simple cook List</title>
         <link rel="stylesheet" href="<c:url value='/css/reset.css' />">
         <link rel="stylesheet" href="<c:url value='/css/style.css' />">
     </head>
     <body>
+    <h1><a href="${pageContext.request.contextPath}/Index">Simple cook List</a></h1>
        <div class=maink>
         <article>
     	<c:forEach var="data" items="${data}">
@@ -25,6 +27,7 @@
     	</aside>
 		</div>
         <div class=frew>
+        <a href="${pageContext.request.contextPath}/Index">TOPに戻る</a>
 		<a  href="<c:url value='/new' />">新規投稿</a>
 		<a href="<c:url value='/all' />">全ての投稿</a>
 		<a  href="https://docs.google.com/forms/d/e/1FAIpQLSe-zuOdA-CNOtoq1jHF1gJgHANwLV6xiq7ud2GxdpwgoiCGcA/viewform?usp=sf_link">ご意見・お問い合わせ</a>
