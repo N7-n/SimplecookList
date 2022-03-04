@@ -4,18 +4,15 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
 
 import main.DBset;
-import main.DTO;
 
-public class Get1Data {
+public class Getcount {
 	  private PreparedStatement pstmt;
 	  private ResultSet rs;
 
-	    public List<DTO> get1Data(int id) {
-	    	List<DTO> results = new ArrayList<DTO>();
+	    public int getcount(int id) {
+	    	int results =0;
 
 	    	try{
 	    		Connection con = DBset.getConnection();
@@ -25,14 +22,7 @@ public class Get1Data {
 	    		pstmt.setInt(1, id);
 	    		rs = pstmt.executeQuery();
 	    		while(rs.next()){
-	                DTO dto = new DTO();
-	                dto.setId(rs.getInt("id"));
-	                dto.setTitle(rs.getString("title"));
-	                dto.setText(rs.getString("text"));
-	                dto.setItem(rs.getString("item"));
-	                dto.setTime(rs.getInt("time"));
-	                dto.setGoodcount(rs.getInt("goodcount"));
-	                results.add(dto);
+	    			results=rs.getInt("goodcount");
 	    		}
 
 	    	}catch (ClassNotFoundException e) {
@@ -56,7 +46,7 @@ public class Get1Data {
 	    		}
 	    		DBset.close();
 	    	}
-	    	return(results);
+			return results;
 	    }
 
 }

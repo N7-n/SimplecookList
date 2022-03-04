@@ -87,4 +87,14 @@
     <servlet-name>Get</servlet-name>
     <url-pattern>/Get</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Gooder</display-name>
+    <servlet-name>Gooder</servlet-name>
+    <servlet-class>main.Gooder</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Gooder</servlet-name>
+    <url-pattern>/gooder</url-pattern>
+  </servlet-mapping>
 </web-app>

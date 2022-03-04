@@ -25,7 +25,7 @@
         <div class="hamburger-menu">
         <input type="checkbox" id="menu-btn-check">
         <label for="menu-btn-check" class="menu-btn"><span></span></label>
-               <div class="menu-content">
+        <div class="menu-content">
          <ul class=lw>
         <li><a href="<c:url value='/new' />">新規投稿</a>
         <li><a href="<c:url value='/all' />">全ての投稿</a>

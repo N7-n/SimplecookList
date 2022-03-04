@@ -43,6 +43,11 @@ h3{
 	justify-content:space-between;
 	margin-bottom:50px;
 }
+.maink2{
+	margin-top:30px;
+	display:flex;
+	justify-content:space-around;
+}
 
 #content {
     width: 94%;
@@ -133,12 +138,23 @@ a {
     text-decoration: none;
     color: #24738e;
 }
+.ll{
+	padding-top:15px;
+}
 form{
 	margin-left:40px;
+}
+.kit{
+	padding-top:10px;
+	padding-left:10px;
+	font-size:14px;
 }
 .metro{
 	display:flex;
 	justify-content:space-around;
+}
+.metro1{
+	display:flex;
 }
 #footer {
     text-align: center;
@@ -147,7 +163,6 @@ form{
 	font-size: 26px;
 	border-bottom: 3px solid #8490c8;
 }
-
 
 .lw{
 	display:none;

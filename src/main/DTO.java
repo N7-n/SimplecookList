@@ -6,17 +6,21 @@ public class DTO {
     private String text;
     private String item;
 	private int time;
+	private byte photo;
+	private int goodcount;
 
 
     public DTO() {
 
     }
-    public DTO(int id,String title, String text, String item,int time) {
+    public DTO(int id,String title, String text, String item,int time,byte photo,int goodcount) {
         this.id = id;
     	this.title = title;
         this.text = text;
         this.item = item;
         this.time = time;
+        this.photo = photo;
+        this.goodcount=goodcount;
     }
 
     //IDのゲッター、セッター
@@ -57,5 +61,23 @@ public class DTO {
     }
     public void setTime(int time) {
         this.time = time;
+    }
+
+
+    //photoのゲッター、セッター
+    public byte getPhoto() {
+        return photo;
+    }
+    public void setPhoto(byte photo) {
+        this.photo = photo;
+    }
+
+
+    //goodcountのゲッター、セッター
+    public int getGoodcount() {
+        return goodcount;
+    }
+    public void setGoodcount(int goodcount) {
+        this.goodcount = goodcount;
     }
 }

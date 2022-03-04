@@ -5,22 +5,20 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import main.DBset;
-public class AddData {
+public class Goodadd {
 	private PreparedStatement pstmt;
     private ResultSet rs;
 
-    public void addData(String title,String text ,String item,int time) {
+    public void goodadd(int goodcount,int id) {
 //    	String title = dto.getTitle();
 
     	try{
+    		goodcount=goodcount+1;
     		Connection con = DBset.getConnection();
-    		String sql = "insert into dataLog (title,text,item,time,goodcount) values(?,?,?,?,0)";
+    		String sql = "update dataLog set goodcount=? where id=?";
             pstmt = con.prepareStatement(sql);
-
-            pstmt.setString(1, title);
-            pstmt.setString(2, text);
-            pstmt.setString(3, item);
-            pstmt.setInt(4, time);
+            pstmt.setInt(1, goodcount);
+            pstmt.setInt(2, id);
 
             pstmt.executeUpdate();
     	}catch (ClassNotFoundException e) {
