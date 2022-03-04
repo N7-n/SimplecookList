@@ -18,10 +18,11 @@
         		<label for="menu-btn-check" class="menu-btn"><span></span></label>
                	<div class="menu-content">
          			<ul class=lw>
-         				<li><a href="${pageContext.request.contextPath}/Index">TOPに戻る</a>
         				<li><a href="<c:url value='/new' />">新規投稿</a>
         				<li><a href="<c:url value='/all' />">全ての投稿</a>
     					<li><a href="<c:url value='/Get' />">おすすめのレシピ</a>
+    					<li><a href="<c:url value='/Iine' />">いいねランキング</a>
+    					<li><a href="${pageContext.request.contextPath}/Index">TOPに戻る</a>
     					<li><a  href="https://docs.google.com/forms/d/e/1FAIpQLSe-zuOdA-CNOtoq1jHF1gJgHANwLV6xiq7ud2GxdpwgoiCGcA/viewform?usp=sf_link">ご意見・お問い合わせ</a>
     				</ul>
         		</div>
@@ -57,9 +58,11 @@
 		<aside>
 			<h3 class=sub>カテゴリー</h3>
         	<ul class=sub>
-        		<li><a href="<c:url value='/new' />">新規投稿</a>
-        		<li><a href="<c:url value='/all' />">全ての投稿</a>
-    			<li><a href="<c:url value='/Get' />">おすすめのレシピ</a>
+        <li><a href="<c:url value='/new' />">新規投稿</a>
+        <li><a href="<c:url value='/all' />">全ての投稿</a>
+    	<li><a href="<c:url value='/Get' />">おすすめのレシピ</a>
+    	<li><a href="<c:url value='/Iine' />">いいねランキング</a>
+    	<li><a href="${pageContext.request.contextPath}/Index">TOPに戻る</a>
     			<li><a  href="https://docs.google.com/forms/d/e/1FAIpQLSe-zuOdA-CNOtoq1jHF1gJgHANwLV6xiq7ud2GxdpwgoiCGcA/viewform?usp=sf_link">ご意見・お問い合わせ</a>
     		</ul>
     	</aside>

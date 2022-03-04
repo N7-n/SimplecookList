@@ -97,4 +97,14 @@
     <servlet-name>Gooder</servlet-name>
     <url-pattern>/gooder</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Iine</display-name>
+    <servlet-name>Iine</servlet-name>
+    <servlet-class>main.Iine</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Iine</servlet-name>
+    <url-pattern>/Iine</url-pattern>
+  </servlet-mapping>
 </web-app>
