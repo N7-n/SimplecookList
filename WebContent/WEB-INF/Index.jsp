@@ -52,6 +52,8 @@
     	<li><a href="<c:url value='/Iine' />">いいねランキング</a>
     	<li><a  href="https://docs.google.com/forms/d/e/1FAIpQLSe-zuOdA-CNOtoq1jHF1gJgHANwLV6xiq7ud2GxdpwgoiCGcA/viewform?usp=sf_link">ご意見・お問い合わせ</a>
     	</ul>
+    	<h3>Simple cook Listについて</h3>
+    	<p class=sub1>会員登録なしでレシピの投稿、閲覧が行えます。いいねランキングで人気の投稿を確認しましょう。毎月末にはレシピコンテストを開催しています。ぜひ奮ってご参加ください。</p>
     	</aside>
 		</div>
         <div class=frew>

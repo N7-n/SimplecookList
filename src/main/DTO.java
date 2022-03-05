@@ -6,14 +6,14 @@ public class DTO {
     private String text;
     private String item;
 	private int time;
-	private byte photo;
+	private String photo;
 	private int goodcount;
 
 
     public DTO() {
 
     }
-    public DTO(int id,String title, String text, String item,int time,byte photo,int goodcount) {
+    public DTO(int id,String title, String text, String item,int time,String photo,int goodcount) {
         this.id = id;
     	this.title = title;
         this.text = text;
@@ -65,10 +65,10 @@ public class DTO {
 
 
     //photoのゲッター、セッター
-    public byte getPhoto() {
+    public String getPhoto() {
         return photo;
     }
-    public void setPhoto(byte photo) {
+    public void setPhoto(String photo) {
         this.photo = photo;
     }
 

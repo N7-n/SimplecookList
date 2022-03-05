@@ -12,7 +12,6 @@ body {
 }
 aside{
  width:30%;
- padding:12px 10px;
 }
 article{
 	width:70%;
@@ -33,10 +32,12 @@ h3{
     text-align:center;
 
 }
+
 .sub{
-	padding:0 8px 8px;
+	padding:5px 8px 8px;
 	border-bottom: 2px solid #b4c1d1;
 }
+
 .maink{
 	margin-top:30px;
 	display:flex;
@@ -172,7 +173,9 @@ form{
     display: none;
 }
 
-
+aside p{
+	padding: 20px 20px;
+}
 
 
 
@@ -233,6 +236,7 @@ article{
     z-index: 90;
     background-color: #3584bb;
 }
+
 .menu-btn span,
 .menu-btn span:before,
 .menu-btn span:after {

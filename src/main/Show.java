@@ -30,7 +30,9 @@ public class Show extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		Get1Data dao = new Get1Data();
+
     	List<DTO> data = dao.get1Data(Integer.parseInt(request.getParameter("id")));
+
 		request.setAttribute("data", data);
 
         RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/show.jsp");

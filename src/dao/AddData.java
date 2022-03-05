@@ -23,6 +23,7 @@ public class AddData {
             pstmt.setInt(4, time);
 
             pstmt.executeUpdate();
+
     	}catch (ClassNotFoundException e) {
     		e.printStackTrace();
     	} catch (SQLException e) {
