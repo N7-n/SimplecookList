@@ -1,0 +1,10 @@
+version: "3"
+servises:
+  web:
+    image: myapp
+    ports: - 8080:8080
+    environment:
+      JAVA_OPTS: >
+        -Dhttp.prop.connectionTimeout=2000
+        -Dhttp.prop.acceptCount=20
+        -Dajp.prop.connectionTimeout=2000
